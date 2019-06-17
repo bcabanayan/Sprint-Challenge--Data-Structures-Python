@@ -5,7 +5,13 @@ class RingBuffer:
     self.storage = [None]*capacity
 
   def append(self, item):
-    
+    # use get to determine the number of elements in self.storage
+    # if the number of elements is less than capacity...
+      # add the element to self.storage; number of elements = index to be inserted into
+    # if the number of elements is equal to capacity...
+      # remove the element from the head of self.storage
+      # add the new element to the tail of self.storage
+
 
   def get(self):
     # start with empty array
