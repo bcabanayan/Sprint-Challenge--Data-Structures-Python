@@ -5,13 +5,16 @@ class RingBuffer:
     self.storage = [None]*capacity
 
   def append(self, item):
-    pass
+    
 
   def get(self):
+    # start with empty array
     elements = []
+    # if element exists, add to the empty array
     for element in self.storage:
       if element:
         elements.append(element)
+    # return the empty array
     return elements
 
 print(RingBuffer(4).get())
