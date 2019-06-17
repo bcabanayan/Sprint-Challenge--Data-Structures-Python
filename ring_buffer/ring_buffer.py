@@ -8,4 +8,10 @@ class RingBuffer:
     pass
 
   def get(self):
-    pass
+    elements = []
+    for element in self.storage:
+      if element:
+        elements.append(element)
+    return elements
+
+print(RingBuffer(4).get())
